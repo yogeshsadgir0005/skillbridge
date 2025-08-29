@@ -14,6 +14,15 @@ const ApplicationCard = ({ application }) => {
     }
   };
 
+  // FIX: Add a check to ensure application.project is not null
+  if (!application.project) {
+    return (
+        <article className="bg-slate-900/60 backdrop-blur-xl rounded-2xl ring-1 ring-slate-800 shadow-2xl overflow-hidden p-6">
+            <p className="text-red-400">This application is linked to a project that has been deleted.</p>
+        </article>
+    );
+  }
+
   return (
     <article className="bg-slate-900/60 backdrop-blur-xl rounded-2xl ring-1 ring-slate-800 shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
       <div className="p-6">

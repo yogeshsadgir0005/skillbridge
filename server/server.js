@@ -21,11 +21,8 @@ const io = new Server(server, {
     }
 });
 
-// --- ADDED: Make io accessible to our router controllers ---
-// This line allows us to call req.app.get('io') in our controller files.
 app.set('io', io);
 
-// --- Routes ---
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/projects', require('./routes/projects'));
 app.use('/api/freelancer', require('./routes/freelancer'));
@@ -35,7 +32,6 @@ app.use('/api/skills', require('./routes/skills'));
 app.use('/api/upload', require('./routes/upload'));
 
 
-// --- Socket.io Connection Logic ---
 io.on('connection', (socket) => {
     console.log(`User Connected: ${socket.id}`);
 
