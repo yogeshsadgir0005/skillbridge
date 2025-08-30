@@ -26,7 +26,7 @@ export const GeneralContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (token) {
-      const newSocket = io('http://localhost:4000', {
+      const newSocket = io('https://skillbridge-7x1l.onrender.com', {
         auth: { token },
       });
       setSocket(newSocket);
