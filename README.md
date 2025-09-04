@@ -2,7 +2,7 @@
 
 SkillBridge is a **modern, full-stack freelance marketplace** designed to connect clients with talented freelancers in a seamless and real-time environment. From project posting and bidding to a dedicated workspace with live chat, SkillBridge provides a **complete ecosystem** for managing freelance work from start to finish.  
 
-# [🌐 Live Preview ](https://portfolio-seven-sepia-16.vercel.app/)
+# [🌐 Live Preview : https://skillbridge-eosin.vercel.app/ ](https://skillbridge-eosin.vercel.app/)
 
 ---
 
