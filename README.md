@@ -49,9 +49,4 @@ Make sure you have installed:
 
 ---
 
-### Installation  
 
-1. **Clone the repository**  
-```bash
-git clone https://github.com/your-username/skillbridge.git
-cd skillbridge
